@@ -1,0 +1,174 @@
+@media (max-width:479.9px) and (orientation:portrait) {
+    .container {
+        max-width:479px;
+       }
+    .header {
+        padding-top: 20px;
+        &__container {
+            flex-direction: column;
+        }
+        &__navigation {
+            ul {
+            margin-top: 20px;
+            }
+        }
+        &__controls {        
+            justify-content: flex-end;
+        }
+        &__navigation {
+            ul {
+                li:hover {
+                    transform: none;
+                    color: $title-color;
+                    cursor: none;
+                }
+                li:nth-child(2) {
+                    margin-left: 15px;
+                }
+                li:nth-child(3) {
+                    margin-left: 15px;
+                }
+                li:nth-child(4) {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    .greetings {
+        height: auto;
+        margin-bottom: 100px;
+        &__container {
+            max-width: 479px;
+            margin-top: 50px;
+        }
+        &__plane {
+            display: none;
+        }
+        &__subtitle {
+            padding-top: 0px;
+        }
+        &__girl{
+            display: none;
+        }
+        
+    }
+    .service {
+        &__items {
+            flex-wrap: wrap;
+            margin-bottom: 100px;
+        }
+        &__item{
+            width: 100%;
+        }
+    }
+    .destinations {
+        &__container {
+            align-items: center;
+        }
+        &__items {
+            flex-direction: column;
+        }
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+    .booking {
+        &__inner {
+            flex-direction: column;
+        }  
+        &__inner-content {
+            top: 20px;
+            right: 0px;
+        }
+        &__outer {
+            &-content {
+                right: -50px;
+            }
+        }
+    }
+    .feedbacks {
+        &__container {
+            margin-bottom: 100px;
+            flex-direction: column;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__title {
+            margin-bottom: 80px;
+        }
+        &__content {
+            &-box {
+                width: 400px;
+            }
+            &-info {
+                width: 350px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .partners {
+        &__logo {
+            mix-blend-mode: normal;
+        }
+        &__list {
+            flex-wrap: wrap;
+            &-item {
+                width: 50%;
+                margin-bottom: 50px;
+                &:hover {
+                    box-shadow: none;
+                }
+                &:hover .partners__logo {
+                    mix-blend-mode: normal;
+                    cursor: none;
+                }
+            }
+        }
+    }
+    .subscription {
+        &__container {
+            max-width: 456px;
+            &::before {
+                right: -10px;
+            }
+            &::after {
+                right: 0px;
+            }
+        }
+        &__button {
+            cursor: none;
+            margin-top: 30px;
+        }
+    }
+    .footer {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-left: 0;
+        }
+        &__desc {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__info {
+            justify-content: space-evenly;
+            margin-bottom: 30px;
+        }
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+       
+    }
+    
+}
